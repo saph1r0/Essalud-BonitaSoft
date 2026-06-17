@@ -547,11 +547,42 @@
       <enabled>true</enabled>
       <password encrypted="false">bpm</password>
     </user>
+    <user userName="ana.quimico">
+      <firstName>Ana</firstName>
+      <lastName>Quimico</lastName>
+      <personalData>
+        <email>ana.quimico@acme.com</email>
+      </personalData>
+      <professionalData>
+        <email>ana.quimico@acme.com</email>
+        <phoneNumber>484-302-5000</phoneNumber>
+        <faxNumber>484-302-0000</faxNumber>
+        <city>San Francisco</city>
+      </professionalData>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="Diego Tecnico">
+      <firstName>Diego</firstName>
+      <lastName>Tecnico</lastName>
+      <personalData/>
+      <professionalData>
+        <email>diego.tecnico@acme.com</email>
+      </professionalData>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
   </users>
   <roles>
     <role name="member">
       <displayName>Member</displayName>
       <description></description>
+    </role>
+    <role name="Tecnico">
+      <displayName>Tecnico</displayName>
+    </role>
+    <role name="Quimico">
+      <displayName>Quimico</displayName>
     </role>
   </roles>
   <groups>
@@ -606,6 +637,9 @@
     <group name="services" parentPath="/acme/production">
       <displayName>Services</displayName>
       <description>This group represents the services department of the ACME organization</description>
+    </group>
+    <group name="Farmacia">
+      <displayName>Farmacia</displayName>
     </group>
   </groups>
   <memberships>
@@ -733,6 +767,21 @@
       <roleName>member</roleName>
       <groupName>north_america</groupName>
       <groupParentPath>/acme/sales</groupParentPath>
+    </membership>
+    <membership>
+      <userName>helen.kelly</userName>
+      <roleName>Tecnico</roleName>
+      <groupName>Farmacia</groupName>
+    </membership>
+    <membership>
+      <userName>ana.quimico</userName>
+      <roleName>Quimico</roleName>
+      <groupName>Farmacia</groupName>
+    </membership>
+    <membership>
+      <userName>Diego Tecnico</userName>
+      <roleName>Tecnico</roleName>
+      <groupName>Farmacia</groupName>
     </membership>
   </memberships>
 </organization:Organization>
