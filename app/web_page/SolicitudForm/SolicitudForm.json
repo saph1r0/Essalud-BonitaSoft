@@ -1,10 +1,10 @@
 {
-  "id" : "sinStock",
-  "name" : "sinStock",
+  "id" : "SolicitudForm",
+  "name" : "SolicitudForm",
   "type" : "form",
-  "uuid" : "ead7b9a9-47f4-4f8c-92ef-074489e8ed80",
+  "uuid" : "3c38a260-7b24-4cb7-89fc-691c35f16527",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1781631927621,
+  "lastUpdate" : 1782981558287,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -14,7 +14,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "afd028cb-3bcd-4a19-bc5e-ea884507fae3",
+        "reference" : "fe1337b7-1814-408f-9781-b5816b7ebf8f",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [
@@ -42,7 +42,7 @@
                 },
                 "text" : {
                   "type" : "interpolation",
-                  "value" : "Sin stock en Kárdex"
+                  "value" : "Datos para cita medica"
                 },
                 "alignment" : {
                   "type" : "constant",
@@ -57,7 +57,7 @@
                   "value" : false
                 }
               },
-              "reference" : "db66881c-2b37-420a-8832-be98240837b9",
+              "reference" : "963e439d-4226-472e-9c2c-7c615024644f",
               "hasValidationError" : false,
               "id" : "pbTitle",
               "description" : ""
@@ -94,7 +94,7 @@
                 },
                 "text" : {
                   "type" : "interpolation",
-                  "value" : "Sin stock en Kárdex. Por favor, aplique el sello de PENDIENTE en la receta física del paciente para que regrese otro día."
+                  "value" : ""
                 },
                 "alignment" : {
                   "type" : "constant",
@@ -117,7 +117,7 @@
                   "value" : 4
                 }
               },
-              "reference" : "54c5ebda-f1d3-4bcc-8a0a-4ea3f945e004",
+              "reference" : "8d783ed0-346f-4983-a4f2-b072eb628efd",
               "hasValidationError" : false,
               "id" : "pbText",
               "description" : ""
@@ -132,8 +132,17 @@
         "dimension" : {
           "xs" : 12
         },
-        "propertyValues" : { },
-        "reference" : "972e1bad-6fcd-4cc4-8860-e5a9cff8e43d",
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          }
+        },
+        "reference" : "57838186-691d-49fe-b79d-da50989ecfc5",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -142,10 +151,170 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "e0bdabdd-e18e-4902-9a22-ef9eacde11e1",
+          "reference" : "7074b9e1-e22a-4a82-82c8-d5a27bc8ea32",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "md" : 12,
+                  "sm" : 12,
+                  "xs" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 1
+                  },
+                  "readOnly" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Dni"
+                  },
+                  "placeholder" : {
+                    "type" : "constant"
+                  },
+                  "type" : {
+                    "type" : "constant",
+                    "value" : "text"
+                  },
+                  "dimension" : {
+                    "type" : "constant",
+                    "value" : 12
+                  },
+                  "value" : {
+                    "type" : "variable",
+                    "value" : "formInput.dniPacienteInput"
+                  },
+                  "required" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "minLength" : {
+                    "type" : "constant",
+                    "value" : 8
+                  },
+                  "maxLength" : {
+                    "type" : "constant",
+                    "value" : 8
+                  },
+                  "debounce" : {
+                    "type" : "constant",
+                    "value" : 0
+                  },
+                  "min" : {
+                    "type" : "constant"
+                  },
+                  "max" : {
+                    "type" : "constant"
+                  },
+                  "step" : {
+                    "type" : "constant",
+                    "value" : 1
+                  }
+                },
+                "reference" : "1bb40838-28ee-478c-b7e1-9de912f4315a",
+                "hasValidationError" : false,
+                "id" : "pbInput",
+                "description" : ""
+              }
+            ],
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "disabled" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "required" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Especialidad"
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 4
+                  },
+                  "placeholder" : {
+                    "type" : "interpolation",
+                    "value" : "Select an option"
+                  },
+                  "availableValues" : {
+                    "type" : "expression",
+                    "value" : "listaespecialidades"
+                  },
+                  "displayedKey" : {
+                    "type" : "constant"
+                  },
+                  "returnedKey" : {
+                    "type" : "expression"
+                  },
+                  "value" : {
+                    "type" : "variable",
+                    "value" : "formInput.especialidadInput"
+                  }
+                },
+                "reference" : "0a218a51-76c4-4aff-91fe-cb85000b3760",
+                "hasValidationError" : false,
+                "id" : "pbSelect"
+              }
+            ],
             [
               {
                 "type" : "component",
@@ -173,15 +342,15 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Sello Aplicado - Finalizar"
+                    "value" : "Submit"
                   },
                   "dataToSend" : {
                     "type" : "expression",
-                    "value" : "formOutput"
+                    "value" : "formInput"
                   },
                   "dataFromError" : {
                     "type" : "variable",
-                    "value" : "formOutput._submitError"
+                    "value" : "formIntput._submitError"
                   },
                   "allowHTML" : {
                     "type" : "constant",
@@ -242,7 +411,7 @@
                     "value" : ""
                   }
                 },
-                "reference" : "dea21ed1-cf56-4498-a4db-bafbc5259305",
+                "reference" : "82362a97-1145-456f-8be7-22b900e8dfbb",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -294,7 +463,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "92265a5b-31f7-44e0-b7d7-05362b78bebe",
+                "reference" : "bde4bc08-47d8-4571-b8a7-a342ced5ea17",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -310,6 +479,16 @@
       "type" : "url",
       "value" : [
         "../API/bpm/userTask/{{taskId}}"
+      ],
+      "exposed" : false
+    },
+    "formInput" : {
+      "type" : "json",
+      "value" : [
+        "{",
+        "  \"dniPacienteInput\" : \"\",",
+        "  \"especialidadInput\" : \"\"",
+        "}"
       ],
       "exposed" : false
     },
@@ -332,7 +511,8 @@
       "type" : "expression",
       "value" : [
         "return {",
-        "",
+        "\tdniPacienteInput: $data.formInput.dniPacienteInput,",
+        "\tespecialidadInput: $data.formInput.especialidadInput",
         "}"
       ],
       "exposed" : false
@@ -350,18 +530,25 @@
         "id"
       ],
       "exposed" : false
+    },
+    "listaespecialidades" : {
+      "type" : "expression",
+      "value" : [
+        "return [\"Cardiología\", \"Pediatría\", \"Medicina General\", \"Ginecología\"];"
+      ],
+      "exposed" : false
     }
   },
   "assets" : [
     {
-      "id" : "e53cc7b5-e909-4cad-ab09-f436b53ab8c0",
+      "id" : "293a4222-4a0c-44df-bcb5-94034b49a606",
       "name" : "localization.json",
       "type" : "json",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "f6936f40-f3ce-44c4-bb61-a78c85a8cee1",
+      "id" : "34190842-c4fb-49fb-b5e7-4c4827db44a3",
       "name" : "style.css",
       "type" : "css",
       "order" : 0,
